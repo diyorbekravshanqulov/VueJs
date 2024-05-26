@@ -20,6 +20,7 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
   flex-direction: column;
   /* padding: 26px 10%; */
   gap: 20px;
-  position: relative;
+  position: relative; 
+  
 }
 </style>
