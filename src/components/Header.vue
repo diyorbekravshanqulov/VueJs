@@ -35,6 +35,7 @@ const icon = ref(["../../public/search.svg", "../../public/cart.svg"]);
 }
 
 .menu {
+  display: flex;
   gap: 50px;
   color: #3d3d3d;
   border: 3px solid transparent;
