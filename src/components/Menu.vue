@@ -17,9 +17,9 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 
 <style scoped>
 .container {
-  /* width: 310px; */
   margin-top: 12px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 26px 10%;
   gap: 20px;
   justify-content: space-between;

@@ -10,8 +10,25 @@ import Flowers from "./components/Flowers.vue";
 <template>
   <Header />
   <Top_side />
-  <Category />
-  <Menu />
-  <Sale />
-  <Flowers />
+  <div>
+    <Category />
+    <Menu />
+    <Sale />
+    <Flowers class="flower"></Flowers>
+  </div>
 </template>
+
+<style scoped>
+div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+Menu,
+.flower {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.flower {
+  grid-template-rows: repeat(3, 1fr);
+}
+</style>

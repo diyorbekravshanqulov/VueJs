@@ -63,11 +63,11 @@ const inside_cate_size = ref(["(119)", "(86)", "(78)"]);
 
 <style scoped>
 .container {
-  width: 310px;
+  /* width: 310px; */
   margin-top: 12px;
   display: flex;
   flex-direction: column; /* Modified for vertical layout */
-  /* padding: 26px 10%; */
+  padding: 26px 10%;
   gap: 20px; /* Modified for spacing between categories */
   position: relative;
 }
