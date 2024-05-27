@@ -4,6 +4,7 @@ import Top_side from "./components/Top_side.vue";
 import Category from "./components/category.vue";
 import Menu from "./components/Menu.vue";
 import Flowers from "./components/Flowers.vue";
+import Pagination from "./components/pagination.vue";
 </script>
 
 <template>
@@ -17,5 +18,7 @@ import Flowers from "./components/Flowers.vue";
       <Category class="w-[calc(100%/4+5%)]" />
     <Flowers></Flowers>
     </div>
+
+    <Pagination />
   </div>
 </template>
