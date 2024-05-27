@@ -25,7 +25,7 @@ import { ref } from "vue";
   display: flex;
   /* justify-content: space-between;    */
   align-items: center;
-  padding: 26px 10%;
+  /* padding: 26px 10%; */
   gap: 20%;
   position: relative;
 }

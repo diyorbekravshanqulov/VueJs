@@ -5,7 +5,8 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 </script>
 
 <template>
-  <div class="container">
+  
+  <div class="container w-[74%]">
     <div class="right">
       <a v-for="item in items" :key="item" href="">{{ item }}</a>
     </div>
@@ -18,12 +19,12 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 <style scoped>
 .container {
   margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 26px 10%;
+  display: flex;
+  padding: 26px 0;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .right {
@@ -34,14 +35,12 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 }
 
 a {
+  border-bottom: 3px solid transparent;
   transition: all 0.1s;
 }
 
 a:hover {
   font-size: 15px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: left;
   color: #46a358;
   font-weight: 700;
   border-bottom: 3px solid #46a358;

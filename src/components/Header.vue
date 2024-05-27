@@ -23,7 +23,7 @@ const icon = ref(["../../public/search.svg", "../../public/cart.svg"]);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 10%;
+  padding: 26px 0;
 }
 
 .menu,

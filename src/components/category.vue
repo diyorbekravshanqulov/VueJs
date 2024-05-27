@@ -29,7 +29,7 @@ const inside_cate_size = ref(["(119)", "(86)", "(78)"]);
 </script>
 
 <template>
-  <div class="container">
+  <div class="container ">
     <div class="general">
       <div class="top">
         <h2>Categories</h2>
@@ -58,18 +58,23 @@ const inside_cate_size = ref(["(119)", "(86)", "(78)"]);
         </div>
       </div>
     </div>
+    <div class="sale">
+      <h2>Super Sale</h2>
+      <p>UP TO 75% OFF</p>
+      <img src="../../public/sale.svg" alt="" />
+    </div>
   </div>
 </template>
 
 <style scoped>
 .container {
-  /* width: 310px; */
-  margin-top: 12px;
+  /* margin-top: 12px; */
   display: flex;
   flex-direction: column; /* Modified for vertical layout */
-  padding: 26px 10%;
+  padding: 26px 0;
   gap: 20px; /* Modified for spacing between categories */
   position: relative;
+  /* padding-right: 0; */
 }
 
 .general {
@@ -158,8 +163,32 @@ h2 {
   color: #fff;
 }
 
-.bottom{ 
-    margin-top: 46px;
+.bottom {
+  margin-top: 46px;
 }
+
+@font-face {
+  font-family: "Hanging Letters";
+  src: url("../../public/font/hanging_letters/Hanged\ Letters.ttf");
+}
+
+.sale h2 {
+  text-align: center;
+  font-family: "Hanging Letters";
+  color: #46a358;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 65px;
+}
+
+.sale p {
+  margin-top: 11px;
+  color: #3d3d3d;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
 
 </style>
