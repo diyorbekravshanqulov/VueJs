@@ -9,6 +9,11 @@ import Pagination from "./components/pagination.vue";
 import Info from "./components/Info.vue";
 
 const isActive = ref(false);
+const close = ref(false);
+
+const modal = () => {
+  close.value = true; // Update close ref to open the modal
+}
 </script>
 
 <template>
@@ -27,10 +32,10 @@ const isActive = ref(false);
     <Info />
   </div>
 
-  <div class="bg-black/55 fixed inset-0"></div>
+   <div @click="close = false" :class="{ 'hidden' : !close }" class="bg-black/55 fixed inset-0"></div>
 
-  <div class="fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[600px] bg-white px-3">
-    <button @click="isActive = false" class="text-[30px] w-[100%] text-end font-medium">&times;</button>
+   <div :class="{ 'hidden' : !close }" class="fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[600px] bg-white px-3">
+    <button @click="close = false" class="text-[30px] w-[100%] text-end font-medium">&times;</button>
     <div class="flex flex-wrap items-center justify-center divide-[#999] mt-[10px]">
       <button :class="{ 'text-[#46A358]': !isActive }" class="font-medium text-2xl text-center w-[94px]" @click="isActive = false">Login</button>
       <button :class="{ 'text-[#46A358]': isActive }" class="font-medium text-2xl text-center w-[120px]" @click="isActive = true">Register</button>

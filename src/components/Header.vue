@@ -3,6 +3,10 @@ import { ref } from "vue";
 
 const menu = ref(["Home", "Shop", "Plant Care", "Blogs"]);
 const icon = ref(["../../public/search.svg", "../../public/cart.svg"]);
+
+const modal = () => {
+  emit("modal");
+}
 </script>
 
 <template>
@@ -13,7 +17,7 @@ const icon = ref(["../../public/search.svg", "../../public/cart.svg"]);
     </div>
     <div class="icon">
       <img v-for="item in icon" :key="item" :src="item" alt="Icon" />
-      <button>Login</button>
+      <button @click="modal">Login</button>
     </div>
   </div>
 </template>
