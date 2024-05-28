@@ -6,13 +6,13 @@
       <button
         v-for="item in 4"
         :key="item"
-        class="px-[15px] py-[10px] hover:bg-[#46A358] border border-black hover:border-transparent rounded-[4px] hover:text-white text-[18px] font-bold"
+        class="md:px-[15px] md:py-[10px] px-[10px] py-[5px] hover:bg-[#46A358] border text-[#777] border-[#777] hover:border-transparent rounded-[4px] hover:text-white text-[18px] font-bold"
       >
         {{ item }}
       </button>
       <!-- Button with '>' character -->
       <button
-        class="px-[15px] py-[10px] hover:bg-[#46A358] border border-black hover:border-transparent rounded-[4px] hover:text-white text-[18px] font-bold"
+        class="md:px-[15px] md:py-[10px] px-[10px] py-[5px] hover:bg-[#46A358] border text-[#777] border-[#777] hover:border-transparent rounded-[4px] hover:text-white text-[18px] font-bold"
       >
         &gt;
       </button>
