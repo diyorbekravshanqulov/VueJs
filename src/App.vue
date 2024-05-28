@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import Header from "./components/Header.vue";
 import Top_side from "./components/Top_side.vue";
 import Category from "./components/category.vue";
@@ -8,12 +7,6 @@ import Flowers from "./components/Flowers.vue";
 import Pagination from "./components/pagination.vue";
 import Info from "./components/Info.vue";
 
-const isActive = ref(false);
-const close = ref(false);
-
-const modal = () => {
-  close.value = true; // Update close ref to open the modal
-}
 </script>
 
 <template>
@@ -32,7 +25,7 @@ const modal = () => {
     <Info />
   </div>
 
-   <div @click="close = false" :class="{ 'hidden' : !close }" class="bg-black/55 fixed inset-0"></div>
+   <!-- <div @click="close = false" :class="{ 'hidden' : !close }" class="bg-black/55 fixed inset-0"></div>
 
    <div :class="{ 'hidden' : !close }" class="fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[600px] bg-white px-3">
     <button @click="close = false" class="text-[30px] w-[100%] text-end font-medium">&times;</button>
@@ -63,5 +56,5 @@ const modal = () => {
         <p class="mt-[20px] text-[13px] w-[60%] mx-auto text-center">Register with Facebook</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
