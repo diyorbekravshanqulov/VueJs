@@ -6,7 +6,7 @@ import Menu from "./components/Menu.vue";
 import Flowers from "./components/Flowers.vue";
 import Pagination from "./components/pagination.vue";
 import Info from "./components/Info.vue";
-
+import Blogs from "./components/Blogs.vue";
 </script>
 
 <template>
@@ -23,5 +23,6 @@ import Info from "./components/Info.vue";
 
     <Pagination />
     <Info />
+    <Blogs />
   </div>
 </template>
