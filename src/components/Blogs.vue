@@ -1,10 +1,10 @@
 <template>
-  <div class="container py-8">
+  <div class="container py-8 md:px-0 px-[10%]">
     <h2 class="text-[#3D3D3D] font-bold text-center text-2xl">Our Blog Posts</h2>
     <p class="text-[#727272] mt-4 text-sm text-center">
       We are an online plant shop offering a wide range of cheap and trendy plants.
     </p>
-    <div class="flex gap-11 mt-6">
+    <div class="grid md:grid-cols-4 grid-cols-1 md:gap-11 gap-6 mt-6">
       <div v-for="(item, index) in 4" :key="index">
         <img src="../../public/blogs.svg" alt="Blog illustration" class="w-full h-auto" />
         <div class="w-full px-[13px]">
