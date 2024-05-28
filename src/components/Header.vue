@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const menu = ref(["Home", "Shop", "Plant Care", "Blogs"]);
-const icon = ref(["../../greenshop.svg", "../../../greenshop.svg"]);
+const icon = ref(["../../search.svg", "../../cart.svg"]);
 
 const isActive = ref(false);
 const close = ref(false);
@@ -19,8 +19,7 @@ const modal = () => {
       <a class="md:flex md:duration-[0.1s] md:hover:font-semibold md:hover:border-b-[3px] md:hover:border-[#46a358] hidden" v-for="item in menu" :key="item" href="#">{{ item }}</a>
     </div>
     <div class="icon">
-      <img class="md:block hidden"  src="../../greenshop.svg" alt="Icon" />
-      <img class="md:block hidden"  src="../../greenshop.svg" alt="Icon" />
+      <img class="md:block hidden" v-for="item in icon" :key="item" :src="item" alt="Icon" />
       <button class="Login" @click="modal">Login</button>
     </div>
 
