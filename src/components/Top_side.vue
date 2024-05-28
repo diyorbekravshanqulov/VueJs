@@ -3,11 +3,11 @@ import { ref } from "vue";
 </script>
 
 <template>
-  <div class="container flex-wrap md:flex-nowrap">
-    <div class="right">
-      <p class="top">Welcome to GreenShop</p>
-      <h1>Let’s Make a Better <span>Planet</span></h1>
-      <p class="bottom">
+  <div class="container md:px-0 px-[10%] md:flex block md:flex-nowrap ">
+    <div class="md:ml-10">
+      <p class="text-center md:text-left">Welcome to GreenShop</p>
+      <h1 class="text-center md:text-left">Let’s Make a Better <span>Planet</span></h1>
+      <p class="text-center md:text-left md:mt-0 mt-6">
         We are an online plant shop offering a wide range of cheap and trendy
         plants. Use our plants to create an unique Urban Jungle. Order your
         favorite plants!
@@ -22,7 +22,6 @@ import { ref } from "vue";
 <style scoped>
 .container {
   margin-top: 12px;
-  display: flex;
   /* justify-content: space-between;    */
   align-items: center;
   /* padding: 26px 10%; */
@@ -30,9 +29,6 @@ import { ref } from "vue";
   position: relative;
 }
 
-.right {
-  margin-left: 40px;
-}
 
 
 .top {
@@ -41,7 +37,6 @@ import { ref } from "vue";
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.1em;
-  text-align: left;
 }
 
 h1 {
@@ -51,7 +46,6 @@ h1 {
   font-size: 70px;
   font-weight: 900;
   line-height: 70px;
-  text-align: left;
 }
 
 span {
@@ -68,7 +62,6 @@ span {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
 }
 
 button {

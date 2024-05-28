@@ -20,7 +20,7 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 .container {
   margin-top: 12px;
   display: flex;
-  padding: 26px 0;
+  /* padding: 26px 0; */
   gap: 20px;
   justify-content: space-between;
   align-items: center;

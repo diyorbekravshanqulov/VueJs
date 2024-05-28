@@ -71,14 +71,14 @@ const inside_cate_size = ref(["(119)", "(86)", "(78)"]);
   /* margin-top: 12px; */
   display: flex;
   flex-direction: column; /* Modified for vertical layout */
-  padding: 26px 0;
+  /* padding: 26px 0; */
   gap: 20px; /* Modified for spacing between categories */
   position: relative;
   /* padding-right: 0; */
 }
 
 .general {
-  padding: 14px 20px;
+  padding: 0 20px;
 }
 
 .top {
@@ -114,6 +114,7 @@ p {
 }
 
 h2 {
+  margin-bottom: 20px;
   color: #3d3d3d;
   font-size: 18px;
   font-weight: 700;
