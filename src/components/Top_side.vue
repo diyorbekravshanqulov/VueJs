@@ -36,8 +36,8 @@ import { ref } from "vue";
 
 .small {
   position: absolute;
-  top: 373px;
-  right: 525px;
+  top: 345px;
+  right: 370px;
   gap: 0px;
   opacity: 0px;
 }
