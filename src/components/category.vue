@@ -60,7 +60,7 @@ const inside_cate_size = ref(["(119)", "(86)", "(78)"]);
     </div>
     <div class="sale">
       <h2>Super Sale</h2>
-      <p>UP TO 75% OFF</p>
+      <p class="mb-6">UP TO 75% OFF</p>
       <img src="../../public/sale.svg" alt="" />
     </div>
   </div>
