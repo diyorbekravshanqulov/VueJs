@@ -13,13 +13,13 @@ const modal = () => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container mx-[10%] md:mx-0">
     <img src="../../public/greenshop.svg" alt="Green Shop Logo" />
     <div class="menu">
-      <a class="a" v-for="item in menu" :key="item" href="#">{{ item }}</a>
+      <a class="md:flex md:duration-[0.1s] md:hover:font-semibold md:hover:border-b-[3px] md:hover:border-[#46a358] hidden" v-for="item in menu" :key="item" href="#">{{ item }}</a>
     </div>
     <div class="icon">
-      <img v-for="item in icon" :key="item" :src="item" alt="Icon" />
+      <img class="md:block hidden" v-for="item in icon" :key="item" :src="item" alt="Icon" />
       <button class="Login" @click="modal">Login</button>
     </div>
 
@@ -31,7 +31,7 @@ const modal = () => {
 
     <div
       :class="{ hidden: !close }"
-      class="fixed z-20 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] h-[600px] bg-white px-3"
+      class="fixed z-20 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[500px] md:h-[600px] bg-white px-3 w-[80%] h-[65%]"
     >
       <button
         @click="close = false"
@@ -61,15 +61,20 @@ const modal = () => {
           <p class="mt-[50px] text-center text-[#3D3D3D] text-[13px] w-[100%]">
             Enter your username and password to login.
           </p>
-          <p class="mt-[26px] text-center text-[#A5A5A5] text-[14px] w-[100%]">
-            almamun_uxui@outlook.com
-          </p>
+          <input
+            placeholder="almamun_uxui@outlook.com"
+            type="password"
+            name=""
+            id=""
+            class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[80%] md:w-[60%] mt-[30px]"
+          />
+          
           <input
             placeholder="Password"
             type="password"
             name=""
             id=""
-            class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[60%] mt-[30px]"
+            class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[80%] md:w-[60%] mt-[30px]"
           />
           <a
             href="mailto:youremail@example.com"
@@ -79,7 +84,7 @@ const modal = () => {
           </a>
 
           <button
-            class="px-[100px] py-[14px] text-[16px] font-medium text-[#fff] border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
+            class="md:px-[100px] py-[14px] text-[16px] font-medium text-[#fff] border rounded-md bg-[#46A358] mt-[27px] w-[80%] md:w-[60%] mx-auto"
           >
             Login
           </button>
@@ -103,31 +108,31 @@ const modal = () => {
             type="text"
             name=""
             id=""
-            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[60%] mt-[14px]"
+            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[80%] md:w-[60%] mt-[14px]"
           />
           <input
             placeholder="Email"
             type="email"
             name=""
             id=""
-            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[60%] mt-4"
+            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[80%] md:w-[60%] mt-4"
           />
           <input
             placeholder="Password"
             type="password"
             name=""
             id=""
-            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[60%] mt-4"
+            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[80%] md:w-[60%] mt-4"
           />
           <input
             placeholder="Confirm Password"
             type="password"
             name=""
             id=""
-            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[60%] mt-4"
+            class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[80%] md:w-[60%] mt-4"
           />
           <button
-            class="px-[100px] py-[14px] text-[16px] font-medium text-[#fff] text-center border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
+            class="md:px-[100px] py-[14px] text-[16px] font-medium text-[#fff] text-center border rounded-md bg-[#46A358] mt-[27px] w-[80%] md:w-[60%] mx-auto"
           >
             Register
           </button>
@@ -169,14 +174,6 @@ const modal = () => {
   border: 3px solid transparent;
 }
 
-.a {
-  transition: all 0.1s;
-}
-
-.a:hover {
-  font-weight: 900;
-  border-bottom: 3px solid #46a358;
-}
 
 .Login {
   margin-right: 5px;

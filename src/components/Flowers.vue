@@ -5,8 +5,8 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 </script>
 
 <template>
-  <div class="container">
-    <div v-for="item in 9" class="box">
+  <div class="container grid md:grid-cols-3 grid-cols-2">
+    <div v-for="item in 9" class="md:px-1 md:py[30px] md:flex md:flex-wrap md:justify-center last:grid-cols-2">
       <img src="../../public/flower.svg" alt="flower" />
       <div class="block w-[100%] px-[15%]">
         <p>Barberton Daisy</p>
@@ -20,18 +20,10 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 .container {
   /* width: 100%; */
   margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 33px;
   position: relative;
 }
 
-.box {
-  padding: 30px 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 p:first-child {
   margin-top: 31px;
   color: #3d3d3d;

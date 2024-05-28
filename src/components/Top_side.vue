@@ -3,7 +3,7 @@ import { ref } from "vue";
 </script>
 
 <template>
-  <div class="container">
+  <div class="container flex-wrap md:flex-nowrap">
     <div class="right">
       <p class="top">Welcome to GreenShop</p>
       <h1>Let’s Make a Better <span>Planet</span></h1>
@@ -14,7 +14,7 @@ import { ref } from "vue";
       </p>
       <button>SHOP NOW</button>
     </div>
-    <img class="small" src="../../public/main_flower_2.svg" alt="" />
+    <img class="absolute md:top-[345px] md:right-[370px] top-[81.5%] " src="../../public/main_flower_2.svg" alt="" />
     <img src="../../public/main_flower.svg" alt="" />
   </div>
 </template>
@@ -34,13 +34,6 @@ import { ref } from "vue";
   margin-left: 40px;
 }
 
-.small {
-  position: absolute;
-  top: 345px;
-  right: 370px;
-  gap: 0px;
-  opacity: 0px;
-}
 
 .top {
   color: #3d3d3d;

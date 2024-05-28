@@ -6,11 +6,11 @@ const items = ref(["All Plants", "New Arrivals", "Sale"]);
 
 <template>
   
-  <div class="container w-[74%]">
+  <div class="container md:w-[74%] w-full">
     <div class="right">
       <a v-for="item in items" :key="item" href="">{{ item }}</a>
     </div>
-    <div class="left">
+    <div class="md:block hidden ">
       <p>Short by: Default sorting</p>
     </div>
   </div>
