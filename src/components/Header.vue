@@ -5,7 +5,7 @@ const menu = ref(["Home", "Shop", "Plant Care", "Blogs"]);
 const icon = ref(["../../public/search.svg", "../../public/cart.svg"]);
 
 const isActive = ref(false);
-const close = ref(true);
+const close = ref(false);
 
 const modal = () => {
   close.value = true; // Update close ref to open the modal
@@ -16,7 +16,7 @@ const modal = () => {
   <div class="container">
     <img src="../../public/greenshop.svg" alt="Green Shop Logo" />
     <div class="menu">
-      <a v-for="item in menu" :key="item" href="#">{{ item }}</a>
+      <a class="a" v-for="item in menu" :key="item" href="#">{{ item }}</a>
     </div>
     <div class="icon">
       <img v-for="item in icon" :key="item" :src="item" alt="Icon" />
@@ -71,13 +71,15 @@ const modal = () => {
             id=""
             class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[60%] mt-[30px]"
           />
-          <p
-            class="mt-[14px] text-[#46A358] leading-[14px] w-[60%] text-right mx-auto"
+          <a
+            href="mailto:youremail@example.com"
+            class="mt-[14px] text-[#46A358] leading-[14px] w-[60%] text-right mx-auto cursor-pointer"
           >
             Forgot Password?
-          </p>
+          </a>
+
           <button
-            class="px-[129px] py-[14px] text-[16px] font-medium text-[#fff] border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
+            class="px-[100px] py-[14px] text-[16px] font-medium text-[#fff] border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
           >
             Login
           </button>
@@ -125,7 +127,7 @@ const modal = () => {
             class="px-[14px] py-[10px] placeholder:text-[#A5A5A5] border border-[#46A358] rounded-md mx-auto w-[60%] mt-4"
           />
           <button
-            class="px-[129px] py-[14px] text-[16px] font-medium text-[#fff] border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
+            class="px-[100px] py-[14px] text-[16px] font-medium text-[#fff] text-center border rounded-md bg-[#46A358] mt-[27px] w-[60%] mx-auto"
           >
             Register
           </button>
@@ -167,11 +169,11 @@ const modal = () => {
   border: 3px solid transparent;
 }
 
-a {
+.a {
   transition: all 0.1s;
 }
 
-a:hover {
+.a:hover {
   font-weight: 900;
   border-bottom: 3px solid #46a358;
 }
