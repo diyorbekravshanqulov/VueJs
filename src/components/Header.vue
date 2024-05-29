@@ -31,7 +31,7 @@ const modal = () => {
 
     <div
       :class="{ hidden: !close }"
-      class="fixed z-20 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[500px] md:h-[600px] bg-white px-3 w-[80%] h-[90%]"
+      class="fixed z-20 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 md:w-[500px] md:h-[600px] bg-white px-3 w-[90%] h-[90%]"
     >
       <button
         @click="close = false"
