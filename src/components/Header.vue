@@ -62,8 +62,8 @@ const modal = () => {
             Enter your username and password to login.
           </p>
           <input
-            placeholder="almamun_uxui@outlook.com"
-            type="password"
+            placeholder="Email"
+            type="email"
             name=""
             id=""
             class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[80%] md:w-[60%] mt-[30px]"
