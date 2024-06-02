@@ -13,22 +13,7 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="flex flex-wrap justify-center">
-    <Header />
-    <Top_side />
-    <div class="flex justify-end px-[10%] w-screen">
-      <Menu />
-    </div>
-    <div class="md:flex w-screen px-[10%] md:gap-[50px]">
-      <Category class="md:w-[calc(100%/4+5%)] w-full" />
-      <Flowers />
-    </div>
-
-    <Pagination />
-    <Info />
-    <Blogs />
-    <Email />
-    <Contact />
-    <Footer />
+  <div>
+    <router-view></router-view>
   </div>
 </template>

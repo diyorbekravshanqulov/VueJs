@@ -16,10 +16,23 @@ const modal = () => {
   <div class="container mx-[10%] md:mx-0">
     <img src="../../public/greenshop.svg" alt="Green Shop Logo" />
     <div class="menu">
-      <a class="md:flex md:duration-[0.1s] md:hover:font-semibold md:hover:border-b-[3px] md:hover:border-[#46a358] hidden" v-for="item in menu" :key="item" href="#">{{ item }}</a>
+      <router-link
+        class="md:flex md:duration-[0.1s] md:hover:font-semibold md:hover:border-b-[3px] md:hover:border-[#46a358] hidden"
+        v-for="(item, index) in menu"
+        :key="index"
+        :to="index === 0 ? '/' : index === 1 ? '/shop' : ''"
+      >
+        {{ item }}
+      </router-link>
     </div>
     <div class="icon">
-      <img class="md:block hidden" v-for="item in icon" :key="item" :src="item" alt="Icon" />
+      <img
+        class="md:block hidden"
+        v-for="item in icon"
+        :key="item"
+        :src="item"
+        alt="Icon"
+      />
       <button class="Login" @click="modal">Login</button>
     </div>
 
@@ -68,7 +81,7 @@ const modal = () => {
             id=""
             class="px-[14px] py-[10px] border border-[#46A358] placeholder:text-[#A5A5A5] rounded-md mx-auto w-[80%] md:w-[60%] mt-[30px]"
           />
-          
+
           <input
             placeholder="Password"
             type="password"
@@ -173,7 +186,6 @@ const modal = () => {
   color: #3d3d3d;
   border: 3px solid transparent;
 }
-
 
 .Login {
   margin-right: 5px;

@@ -2,12 +2,26 @@
 import { ref } from "vue";
 
 const items = ref(["All Plants", "New Arrivals", "Sale"]);
+const flower = ref([
+  "../../public/info_flower.svg",
+  "../../public/flower.svg",
+  "../../public/info_flower.svg",
+  "../../public/flower.svg",
+  "../../public/info_flower.svg",
+  "../../public/flower.svg",
+  "../../public/info_flower.svg",
+  "../../public/flower.svg",
+  "../../public/info_flower.svg", 
+]);
 </script>
 
 <template>
   <div class="container grid md:grid-cols-3 grid-cols-2">
-    <div v-for="item in 9" class="md:px-1 md:py[30px] md:flex md:flex-wrap md:justify-center last:grid-cols-2">
-      <img src="../../public/flower.svg" alt="flower" />
+    <div
+      v-for="item in flower"
+      class="md:px-1 md:py[30px] md:flex md:flex-wrap md:justify-center last:grid-cols-2"
+    >
+      <img :src="item" alt="flower" />
       <div class="block w-[100%] px-[15%]">
         <p>Barberton Daisy</p>
         <p>$119.00</p>
