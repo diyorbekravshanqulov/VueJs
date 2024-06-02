@@ -11,7 +11,7 @@ const flower = ref([
   "../../public/shop_small_flower2.svg",
 ]);
 
-const isActive = ref(false);
+const isActive = ref(false)
 
 const parag = ref([
   "SKU: 1995751877966",
@@ -20,12 +20,11 @@ const parag = ref([
 ]);
 
 const toggleClass = () => {
-  isActive.value = !isActive.value;
+  isActive = !isActive;
 };
 
 const size = ref(["S", "M", "L", "XL"]);
 </script>
-
 <template>
   <div class="container flex py-8 md:p-15 gap-[52px]">
     <div class="w-[50%] flex">
@@ -46,7 +45,9 @@ const size = ref(["S", "M", "L", "XL"]);
         <p class="text-[#46A358] font-bold text-[22px]">$119.00</p>
         <p class="text-[15px] text-[#3D3D3D]">19 Customer Review</p>
       </div>
-      <p class="text-[#3D3D3D] font-bold text-[15px] mt-7">Short Description:</p>
+      <p class="text-[#3D3D3D] font-bold text-[15px] mt-7">
+        Short Description:
+      </p>
       <p class="text-[#727272] leading-[24px] mt-[10px]">
         The ceramic cylinder planters come with a wooden stand to help elevate
         your plants off the ground. The ceramic cylinder planters come with a
@@ -66,28 +67,32 @@ const size = ref(["S", "M", "L", "XL"]);
         <div class="flex gap-[23px] items-center">
           <button
             class="bg-[#46A358] text-white rounded-full w-[35px] h-[35px] text-xl flex items-center pb-1 justify-center font-medium"
-            @click="count.value > 0 ? count.value-- : count.value"
+            @click="count > 0 ? count-- : count"
           >
             -
           </button>
           <h2 class="text-[#3D3D3D] text-[20px]">{{ count }}</h2>
           <button
             class="bg-[#46A358] text-white rounded-full w-[35px] h-[35px] text-xl flex items-center pb-1 justify-center font-medium"
-            @click="count.value++" 
+            @click="count++"
           >
             +
           </button>
         </div>
         <div class="flex gap-[10px]">
-          <button class="px-8 py-[10px] bg-[#46A358] font-bold text-white rounded-md">
+          <button
+            class="px-8 py-[10px] bg-[#46A358] font-bold text-white rounded-md"
+          >
             BUY NOW
           </button>
-          <button class="px-8 py-[10px] border border-[#46A358] font-bold text-[#46A358] rounded-md">
+          <button
+            class="px-8 py-[10px] border border-[#46A358] font-bold text-[#46A358] rounded-md"
+          >
             ADD TO CART
           </button>
           <button
             @click="toggleClass"
-            :class="{ 'bg-[#46A358]': isActive.value, 'bg-white': !isActive.value }"
+            :class="{ 'bg-[#46A358]': isActive, 'bg-white': !isActive }"
             class="p-[10px] border border-[#46A358] rounded-md"
           >
             <img src="../../public/like.svg" alt="" />
@@ -103,9 +108,11 @@ const size = ref(["S", "M", "L", "XL"]);
         {{ item }}
       </p>
       <div class="flex gap-4 mt-[18px]">
-        <p class="text-[#3D3D3D] text-[15px] font-medium">Share this products:</p>
+        <p class="text-[#3D3D3D] text-[15px] font-medium">
+          Share this products:
+        </p>
         <img
-          v-for="index in 4"
+          v-for="(item, index) in 4"
           :key="index"
           class="text-[#3D3D3D]"
           src="../../public/facebook_black.svg"
