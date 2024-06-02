@@ -73,7 +73,7 @@ const size = ref(["S", "M", "L", "XL"]);
           <h2 class="text-[#3D3D3D] text-[20px]">{{ count }}</h2>
           <button
             class="bg-[#46A358] text-white rounded-full w-[35px] h-[35px] text-xl flex items-center pb-1 justify-center font-medium"
-            @click="count.value++"
+            @click="count.value++" 
           >
             +
           </button>
