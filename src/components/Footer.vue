@@ -9,7 +9,7 @@
     </div>
     <div class="md:col-span-2 grid-cols-1">
       <h3 class="text-[#3D3D3D] text-[18px] font-bold">Social Media</h3>
-      <div class="flex gap-[10px] mt-5">
+      <div class="flex gap-[3%] mt-5">
         <img class="p-2"
           v-for="(item, index) in 5"
           :key="index"
