@@ -37,7 +37,7 @@ const size = ref(["S", "M", "L", "XL"]);
           alt=""
         />
       </div>
-      <img src="./shop_flower.svg" alt="" />
+      <img src="../../public/shop_flower.svg" alt="" />
     </div>
     <div class="w-[50%]">
       <h2 class="text-[28px] font-bold">Barberton Daisy</h2>
@@ -115,7 +115,7 @@ const size = ref(["S", "M", "L", "XL"]);
           v-for="(item, index) in 4"
           :key="index"
           class="text-[#3D3D3D]"
-          src="./facebook_black.svg"
+          src="../../public/facebook_black.svg"
           alt=""
         />
       </div>
