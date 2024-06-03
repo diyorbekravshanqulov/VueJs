@@ -11,7 +11,7 @@ const flower = ref([
   "/shop_small_flower2.svg",
 ]);
 
-const isActive = ref(false)
+const isActive = ref(false);
 
 const parag = ref([
   "SKU: 1995751877966",
@@ -80,11 +80,11 @@ const size = ref(["S", "M", "L", "XL"]);
           </button>
         </div>
         <div class="flex gap-[10px]">
-          <router-link to="/shop/products"
-            class="px-8 py-[10px] bg-[#46A358] font-bold border border-transparent hover:border-[#46A358] text-white rounded-md hover:bg-white hover:text-[#46A358] "
+          <button
+            class="px-8 py-[10px] bg-[#46A358] font-bold border border-transparent hover:border-[#46A358] text-white rounded-md hover:bg-white hover:text-[#46A358]"
           >
             BUY NOW
-          </router-link>
+          </button>
           <button
             class="px-8 py-[10px] border border-[#46A358] font-bold text-[#46A358] rounded-md hover:border-transparent hover:text-white hover:bg-[#46A358]"
           >
