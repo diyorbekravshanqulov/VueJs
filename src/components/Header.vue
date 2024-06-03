@@ -14,7 +14,7 @@ const modal = () => {
 
 <template>
   <div class="container mx-[10%] md:mx-0">
-    <img src="../../public/greenshop.svg" alt="Green Shop Logo" />
+    <img src="./greenshop.svg" alt="Green Shop Logo" />
     <div class="menu">
       <router-link
         class="md:flex md:duration-[0.1s] md:hover:font-semibold md:hover:border-b-[3px] md:hover:border-[#46a358] hidden"
