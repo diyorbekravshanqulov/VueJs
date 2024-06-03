@@ -17,7 +17,7 @@ const flower = ref([
 
 <template>
   <div class="container grid md:grid-cols-3 grid-cols-2">
-    <div
+    <router-link to="/shop"
       v-for="item in flower"
       class="md:px-1 md:py[30px] md:flex md:flex-wrap md:justify-center last:grid-cols-2"
     >
@@ -26,7 +26,7 @@ const flower = ref([
         <p>Barberton Daisy</p>
         <p>$119.00</p>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 

@@ -19,7 +19,7 @@ const pText = ref([
   <div class="container flex flex-wrap py-8 md:p-15 mt-[94px]">
     <div class="flex gap-[30px]">
       <h3
-        class="text-[#3D3D3D] text-[17px] hover:font-bold hover:text-[#46A358] border-b-transparent border-b-[3px] hover:border-b-[#46A358] duration-300"
+        class="text-[#3D3D3D] text-[17px] hover:font-bold hover:text-[#46A358] border-b-transparent border-b-[3px] hover:border-b-[#46A358] duration-200"
         v-for="(item, index) in topText"
         :key="index"
       >
