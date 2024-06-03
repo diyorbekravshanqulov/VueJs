@@ -3,15 +3,15 @@ import { ref } from "vue";
 
 const items = ref(["All Plants", "New Arrivals", "Sale"]);
 const flower = ref([
-  "./info_flower.svg",
-  "./flower.svg",
-  "./info_flower.svg",
-  "./flower.svg",
-  "./info_flower.svg",
-  "./flower.svg",
-  "./info_flower.svg",
-  "./flower.svg",
-  "./info_flower.svg", 
+  "/info_flower.svg",
+  "/flower.svg",
+  "/info_flower.svg",
+  "/flower.svg",
+  "/info_flower.svg",
+  "/flower.svg",
+  "/info_flower.svg",
+  "/flower.svg",
+  "/info_flower.svg", 
 ]);
 </script>
 

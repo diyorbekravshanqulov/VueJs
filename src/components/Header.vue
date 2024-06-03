@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const menu = ref(["Home", "Shop", "Plant Care", "Blogs"]);
-const icon = ref(["./search.svg", "./cart.svg"]);
+const icon = ref(["/search.svg", "/cart.svg"]);
 
 const isActive = ref(false);
 const close = ref(false);

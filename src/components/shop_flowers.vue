@@ -5,10 +5,10 @@ const count = ref(0);
 
 const items = ref(["All Plants", "New Arrivals", "Sale"]);
 const flower = ref([
-  "./shop_small_flower.svg",
-  "./shop_small_flower2.svg",
-  "./shop_small_flower.svg",
-  "./shop_small_flower2.svg",
+  "/shop_small_flower.svg",
+  "/shop_small_flower2.svg",
+  "/shop_small_flower.svg",
+  "/shop_small_flower2.svg",
 ]);
 
 const isActive = ref(false)
@@ -80,13 +80,13 @@ const size = ref(["S", "M", "L", "XL"]);
           </button>
         </div>
         <div class="flex gap-[10px]">
-          <button
-            class="px-8 py-[10px] bg-[#46A358] font-bold text-white rounded-md"
+          <router-link to="/shop/products"
+            class="px-8 py-[10px] bg-[#46A358] font-bold border border-transparent hover:border-[#46A358] text-white rounded-md hover:bg-white hover:text-[#46A358] "
           >
             BUY NOW
-          </button>
+          </router-link>
           <button
-            class="px-8 py-[10px] border border-[#46A358] font-bold text-[#46A358] rounded-md"
+            class="px-8 py-[10px] border border-[#46A358] font-bold text-[#46A358] rounded-md hover:border-transparent hover:text-white hover:bg-[#46A358]"
           >
             ADD TO CART
           </button>
